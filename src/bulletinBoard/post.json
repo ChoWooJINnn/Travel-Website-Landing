@@ -1,0 +1,94 @@
+[
+    
+    {
+        "id": 1,
+        "title": "1 번째 게시물",
+        "author": "유비",
+        "content": "J",
+        "date": "2024-07-24"
+    },
+    {
+        "id": 2,
+        "title": "2 번째 게시물",
+        "author": "관우",
+        "content": "U",
+        "date": "2024-07-23"
+    },
+    {
+        "id": 3,
+        "title": "3 번째 게시물",
+        "author": "장비",
+        "content": "M",
+        "date": "2024-07-22"
+    },
+    {
+        "id": 4,
+        "title": "4 번째 게시물",
+        "author": "조운",
+        "content": "B",
+        "date": "2024-07-21"
+    },
+    {
+        "id": 5,
+        "title": "5 번째 게시물",
+        "author": "제갈량",
+        "content": "O",
+        "date": "2024-07-21"
+    },
+    {
+        "id": 6,
+        "title": "6 번째 게시물",
+        "author": "황충",
+        "content": "T",
+        "date": "2024-07-21"
+    },
+    {
+        "id": 7,
+        "title": "7 번째 게시물",
+        "author": "마초",
+        "content": "R",
+        "date": "2024-07-21"
+    },
+    {
+        "id": 8,
+        "title": "8 번째 게시물",
+        "author": "위연",
+        "content": "O",
+        "date": "2024-07-21"
+    },
+    {
+        "id": 9,
+        "title": "9 번째 게시물",
+        "author": "마속",
+        "content": "N",
+        "date": "2024-07-21"
+    },
+    {
+        "id": 10,
+        "title": "10 번째 게시물",
+        "author": "이엄",
+        "content": "W",
+        "date": "2024-07-21"
+    },
+    {
+        "id": 11,
+        "title": "11 번째 게시물",
+        "author": "강유",
+        "content": "A",
+        "date": "2024-07-21"
+    },
+    {
+        "id": 12,
+        "title": "12 번째 게시물",
+        "author": "마대",
+        "content": "R",
+        "date": "2024-07-21"
+    },
+    {
+        "id": 13,
+        "title": "13 번째 게시물",
+        "author": "방통",
+        "content": "NING",
+        "date": "2024-07-21"
+    }
+]
