@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.images img {
+    width: 30%;
+    height: auto;
+}
+
+.price {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.coupon-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.coupon-button:hover {
+    background-color: #45a049;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.details {
+    margin: 20px 0;
+}
+
+.calendar {
+    margin: 20px 0;
+}
+
+.reserve-button {
+    display: block;
+    width: 100%;
+    background-color: #008CBA;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.reserve-button:hover {
+    background-color: #007B9E;
+}

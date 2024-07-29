@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Reservation Page</title>
+    <link rel="stylesheet" href="reser.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>[특가] 발리 출발 - 4박5일 가이드와 함께 즐기는 자연</h1>
+            <div class="images">
+                <img src="image1.jpg" alt="bali1">
+                <img src="image2.jpeg" alt="bali2">
+                <img src="image3.jpg" alt="bali3">
+            </div>
+            <div class="price">
+                <span>쿠폰 할인가</span>
+                <h2>899,000원부터</h2>
+                <button class="coupon-button">최대 30,000원 할인 쿠폰 받기</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="details">
+                <h3>투어 상세</h3>
+                <p>발리의 자연의 아름다움을 발견하세요...</p>
+            </div>
+
+            <div class="calendar">
+                <h3>여행 날짜 선택</h3>
+                <input type="text" id="calendar" placeholder="Select dates">
+            </div>
+
+            <button class="reserve-button">예약하기</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="calendar.js"></script>
+</body>
+</html>
