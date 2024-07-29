@@ -211,7 +211,13 @@
 .chat-popup.hide {
     animation: foldOut 0.5s forwards;
 }
-
+.chat-button{
+  border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 3px solid black;
+}
   .chat-container {
     display: flex;
     flex-direction: column;

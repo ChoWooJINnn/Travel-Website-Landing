@@ -18,10 +18,7 @@
             <h1>TravelMaven</h1>
             <ul class="navbar">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><button id="log">Login</button></li>
+                <li><a href="./login/login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -40,5 +37,11 @@
         </div>
         <button id="but">Start FREEeeeeee</button>
     </div>
+
+    <script>
+        document.getElementById('but').addEventListener('click', function() {
+            window.location.href = './main/main.html'; 
+        });
+    </script>
 </body>
 </html>
