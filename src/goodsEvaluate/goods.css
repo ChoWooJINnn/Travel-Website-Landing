@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 38px;
+    color: #2BD9FE;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    align-items: center;
+    z-index: 2;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    z-index: 3;
+}
+
+.navbar li {
+    margin-right: 3.5rem;
+    font-size: 18px;
+    font-family: 'Varela Round', sans-serif;
+    z-index: 4;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(124, 146, 236);
+    transition: color 0.3s, background-color 0.3s;
+    z-index: 5;
+}
+
+.reviews {
+    padding: 20px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-header h2 {
+    margin: 0;
+}
+
+.controls button {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.review-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.review-list th, .review-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.review-list th {
+    background-color: #f2f2f2;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 10px;
+}
