@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1:1 문의</title>
+    <link rel="stylesheet" href="consulting.css">
+</head>
+<body>
+    <div class="container">
+        <h1>1:1 문의</h1>
+        <form id="inquiry-form">
+            <h2>문의 등록</h2>
+            <label for="title">제목:</label>
+            <input type="text" id="title" required>
+            <label for="content">내용:</label>
+            <textarea id="content" required></textarea>
+            <button type="submit">등록</button>
+        </form>
+        <div id="inquiries">
+            <h2>문의 목록</h2>
+            <ul id="inquiry-list"></ul>
+        </div>
+        <button id="clear-storage">전체 데이터 삭제</button>
+    </div>
+    <script src="consulting.js"></script>
+</body>
+</html>

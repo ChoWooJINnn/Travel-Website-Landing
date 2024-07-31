@@ -1,16 +1,6 @@
-@charset "UTF-8";
-/*!
-* Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+@charset "UTF-8"; /* 문서의 인코딩을 UTF-8로 설정 */
 :root {
+  /* 색상 변수 설정 */
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #7464a1;
@@ -44,6 +34,7 @@
   --bs-dark: #212529;
   --bs-black: #000;
   --bs-white: #fff;
+  /* RGB 색상 변수 설정 */
   --bs-primary-rgb: 100, 161, 157;
   --bs-secondary-rgb: 116, 100, 161;
   --bs-success-rgb: 103, 194, 156;
@@ -54,10 +45,9 @@
   --bs-dark-rgb: 33, 37, 41;
   --bs-black-rgb: 0, 0, 0;
   --bs-white-rgb: 255, 255, 255;
-  --bs-white-rgb: 255, 255, 255;
-  --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
+  /* 폰트 설정 */
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -67,6 +57,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  /* 테두리 설정 */
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -86,26 +77,26 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /* 박스 크기 계산 방법을 설정 */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* 스크롤 동작을 부드럽게 설정 */
   }
 }
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: var(--bs-body-font-family); /* 바디 폰트 설정 */
+  font-size: var(--bs-body-font-size); /* 바디 폰트 크기 설정 */
+  font-weight: var(--bs-body-font-weight); /* 바디 폰트 굵기 설정 */
+  line-height: var(--bs-body-line-height); /* 바디 행간 설정 */
+  color: var(--bs-body-color); /* 바디 폰트 색상 설정 */
+  text-align: var(--bs-body-text-align); /* 바디 텍스트 정렬 설정 */
+  background-color: var(--bs-body-bg); /* 바디 배경색 설정 */
+  -webkit-text-size-adjust: 100%; /* 텍스트 크기 자동 조정 설정 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 탭 강조 색상 설정 */
 }
 
 hr {
@@ -113,123 +104,123 @@ hr {
   color: inherit;
   border: 0;
   border-top: 1px solid;
-  opacity: 0.25;
+  opacity: 0.25; /* 수평선 스타일 설정 */
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  line-height: 1.2;
+  line-height: 1.2; /* 제목 태그 스타일 설정 */
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.375rem + 1.5vw); /* h1 폰트 크기 설정 */
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* 넓은 화면에서 h1 폰트 크기 설정 */
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.325rem + 0.9vw); /* h2 폰트 크기 설정 */
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* 넓은 화면에서 h2 폰트 크기 설정 */
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1.3rem + 0.6vw); /* h3 폰트 크기 설정 */
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.75rem;
+    font-size: 1.75rem; /* 넓은 화면에서 h3 폰트 크기 설정 */
   }
 }
 
 h4, .h4 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.275rem + 0.3vw); /* h4 폰트 크기 설정 */
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* 넓은 화면에서 h4 폰트 크기 설정 */
   }
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* h5 폰트 크기 설정 */
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1rem; /* h6 폰트 크기 설정 */
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* 문단 스타일 설정 */
 }
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none; /* 약어 스타일 설정 */
 }
 
 address {
   margin-bottom: 1rem;
   font-style: normal;
-  line-height: inherit;
+  line-height: inherit; /* 주소 스타일 설정 */
 }
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 2rem; /* 리스트 스타일 설정 */
 }
 
 ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* 리스트 및 정의 리스트 스타일 설정 */
 }
 
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-bottom: 0;
+  margin-bottom: 0; /* 중첩 리스트 스타일 설정 */
 }
 
 dt {
-  font-weight: 700;
+  font-weight: 700; /* 정의 리스트 항목 스타일 설정 */
 }
 
 dd {
   margin-bottom: 0.5rem;
-  margin-left: 0;
+  margin-left: 0; /* 정의 리스트 설명 스타일 설정 */
 }
 
 blockquote {
-  margin: 0 0 1rem;
+  margin: 0 0 1rem; /* 인용구 스타일 설정 */
 }
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bolder; /* 굵은 글씨 스타일 설정 */
 }
 
 small, .small {
-  font-size: 0.875em;
+  font-size: 0.875em; /* 작은 글씨 스타일 설정 */
 }
 
 mark, .mark {
   padding: 0.1875em;
-  background-color: var(--bs-highlight-bg);
+  background-color: var(--bs-highlight-bg); /* 강조 표시 스타일 설정 */
 }
 
 sub,
@@ -237,28 +228,28 @@ sup {
   position: relative;
   font-size: 0.75em;
   line-height: 0;
-  vertical-align: baseline;
+  vertical-align: baseline; /* 위 첨자 및 아래 첨자 스타일 설정 */
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -0.25em; /* 아래 첨자 스타일 설정 */
 }
 
 sup {
-  top: -0.5em;
+  top: -0.5em; /* 위 첨자 스타일 설정 */
 }
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration: underline; /* 링크 스타일 설정 */
 }
 a:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--bs-link-hover-color); /* 링크 호버 스타일 설정 */
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none; /* 링크 스타일 설정 (href 및 class가 없는 경우) */
 }
 
 pre,
@@ -266,7 +257,7 @@ code,
 kbd,
 samp {
   font-family: var(--bs-font-monospace);
-  font-size: 1em;
+  font-size: 1em; /* 코드 및 키보드 입력 스타일 설정 */
 }
 
 pre {
@@ -274,21 +265,21 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  font-size: 0.875em;
+  font-size: 0.875em; /* 프리 포맷 텍스트 스타일 설정 */
 }
 pre code {
   font-size: inherit;
   color: inherit;
-  word-break: normal;
+  word-break: normal; /* 프리 포맷 코드 스타일 설정 */
 }
 
 code {
   font-size: 0.875em;
   color: var(--bs-code-color);
-  word-wrap: break-word;
+  word-wrap: break-word; /* 코드 스타일 설정 */
 }
 a > code {
-  color: inherit;
+  color: inherit; /* 링크 내 코드 스타일 설정 */
 }
 
 kbd {
@@ -296,37 +287,37 @@ kbd {
   font-size: 0.875em;
   color: var(--bs-body-bg);
   background-color: var(--bs-body-color);
-  border-radius: 0.25rem;
+  border-radius: 0.25rem; /* 키보드 입력 스타일 설정 */
 }
 kbd kbd {
   padding: 0;
-  font-size: 1em;
+  font-size: 1em; /* 중첩 키보드 입력 스타일 설정 */
 }
 
 figure {
-  margin: 0 0 1rem;
+  margin: 0 0 1rem; /* 그림 스타일 설정 */
 }
 
 img,
 svg {
-  vertical-align: middle;
+  vertical-align: middle; /* 이미지 및 SVG 스타일 설정 */
 }
 
 table {
   caption-side: bottom;
-  border-collapse: collapse;
+  border-collapse: collapse; /* 테이블 스타일 설정 */
 }
 
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   color: #6c757d;
-  text-align: left;
+  text-align: left; /* 테이블 캡션 스타일 설정 */
 }
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
+  text-align: -webkit-match-parent; /* 테이블 헤더 스타일 설정 */
 }
 
 thead,
@@ -337,19 +328,19 @@ td,
 th {
   border-color: inherit;
   border-style: solid;
-  border-width: 0;
+  border-width: 0; /* 테이블 스타일 설정 */
 }
 
 label {
-  display: inline-block;
+  display: inline-block; /* 레이블 스타일 설정 */
 }
 
 button {
-  border-radius: 0;
+  border-radius: 0; /* 버튼 스타일 설정 */
 }
 
 button:focus:not(:focus-visible) {
-  outline: 0;
+  outline: 0; /* 버튼 포커스 스타일 설정 */
 }
 
 input,
@@ -360,56 +351,56 @@ textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
+  line-height: inherit; /* 폼 요소 스타일 설정 */
 }
 
 button,
 select {
-  text-transform: none;
+  text-transform: none; /* 버튼 및 선택 요소 스타일 설정 */
 }
 
 [role=button] {
-  cursor: pointer;
+  cursor: pointer; /* 버튼 역할을 하는 요소 스타일 설정 */
 }
 
 select {
-  word-wrap: normal;
+  word-wrap: normal; /* 선택 요소 스타일 설정 */
 }
 select:disabled {
-  opacity: 1;
+  opacity: 1; /* 비활성화된 선택 요소 스타일 설정 */
 }
 
 [list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
-  display: none !important;
+  display: none !important; /* 리스트 스타일 설정 (특정 타입 제외) */
 }
 
 button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  appearance: button; /* 버튼 스타일 설정 */
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
 [type=submit]:not(:disabled) {
-  cursor: pointer;
+  cursor: pointer; /* 비활성화되지 않은 버튼 스타일 설정 */
 }
 
 ::-moz-focus-inner {
   padding: 0;
-  border-style: none;
+  border-style: none; /* Mozilla 브라우저의 버튼 포커스 스타일 설정 */
 }
 
 textarea {
-  resize: vertical;
+  resize: vertical; /* 텍스트 영역 스타일 설정 */
 }
 
 fieldset {
   min-width: 0;
   padding: 0;
   margin: 0;
-  border: 0;
+  border: 0; /* 필드셋 스타일 설정 */
 }
 
 legend {
@@ -418,15 +409,15 @@ legend {
   padding: 0;
   margin-bottom: 0.5rem;
   font-size: calc(1.275rem + 0.3vw);
-  line-height: inherit;
+  line-height: inherit; /* 레전드 스타일 설정 */
 }
 @media (min-width: 1200px) {
   legend {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* 넓은 화면에서 레전드 폰트 크기 설정 */
   }
 }
 legend + * {
-  clear: left;
+  clear: left; /* 레전드 다음 요소 스타일 설정 */
 }
 
 ::-webkit-datetime-edit-fields-wrapper,
@@ -436,16 +427,16 @@ legend + * {
 ::-webkit-datetime-edit-day-field,
 ::-webkit-datetime-edit-month-field,
 ::-webkit-datetime-edit-year-field {
-  padding: 0;
+  padding: 0; /* 날짜 및 시간 입력 스타일 설정 */
 }
 
 ::-webkit-inner-spin-button {
-  height: auto;
+  height: auto; /* 스핀 버튼 스타일 설정 */
 }
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  appearance: textfield; /* 검색 입력 스타일 설정 */
 }
 
 /* rtl:raw:
@@ -457,71 +448,72 @@ legend + * {
 }
 */
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* 검색 입력 장식 스타일 설정 */
 }
 
 ::-webkit-color-swatch-wrapper {
-  padding: 0;
+  padding: 0; /* 색상 선택기 스타일 설정 */
 }
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  appearance: button; /* 파일 선택 버튼 스타일 설정 */
 }
 
 output {
-  display: inline-block;
+  display: inline-block; /* 출력 스타일 설정 */
 }
 
 iframe {
-  border: 0;
+  border: 0; /* 아이프레임 스타일 설정 */
 }
 
 summary {
   display: list-item;
-  cursor: pointer;
+  cursor: pointer; /* 요약 스타일 설정 */
 }
 
 progress {
-  vertical-align: baseline;
+  vertical-align: baseline; /* 진행 표시 스타일 설정 */
 }
 
 [hidden] {
-  display: none !important;
+  display: none !important; /* 숨김 요소 스타일 설정 */
 }
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 300; /* 리드 텍스트 스타일 설정 */
 }
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.2; /* 디스플레이 텍스트 스타일 설정 */
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 5rem;
+    font-size: 5rem; /* 넓은 화면에서 디스플레이 텍스트 크기 설정 */
   }
 }
 
 .display-2 {
   font-size: calc(1.575rem + 3.9vw);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.2; /* 디스플레이 텍스트 스타일 설정 */
 }
 @media (min-width: 1200px) {
   .display-2 {
-    font-size: 4.5rem;
+    font-size: 4.5rem; /* 넓은 화면에서 디스플레이 텍스트 크기 설정 */
   }
 }
 
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.2; /* 디스플레이 텍스트 스타일 설정 */
 }
+
 @media (min-width: 1200px) {
   .display-3 {
     font-size: 4rem;
