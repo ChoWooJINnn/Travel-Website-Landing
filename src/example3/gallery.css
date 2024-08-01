@@ -72,18 +72,8 @@
     display: flex;
   }
   
-  .sidebar {
-    width: 20%;
-    background-color: #c1e6fb;
-    padding: 20px;
-  }
-  
-  .ad img {
-    width: 100%;
-  }
-  
   .content {
-    width: 80%;
+    width: 100%;
     padding: 20px;
   }
   
