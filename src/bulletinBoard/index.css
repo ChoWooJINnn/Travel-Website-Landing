@@ -7,40 +7,29 @@ body {
 
 #wrapper { 
  margin: 0 auto;
- width: 930px;
+ width: 100%;
 }
 
 #header {
- color: #e3ecf3;
- width: 930px;
- float: left;
+ color: #4e54fa;
+ width: 100%;
+ float: center;
  padding: 10px;
- border: 1px solid #ccc;
+ border: 1px solid #ffffff;
  height: 100px;
  margin: 10px 0px 5px 0px;
- background: radial-gradient(circle at center, #4771e6, #e3c748);
+ background: white;
 }
 
-#leftcolumn { 
- color: #eef3f7;
- border: 1px solid #ccc;
- background: linear-gradient(to bottom, #8d9ecd, #d7e1e9);
- margin: 0px 5px 5px 0px;
- padding: 10px;
- height: 530px;
- width: 200px;
- float: left;
-}
-
-#rightcolumn { 
- float: right;
+#column { 
+ float: center;
  color: #333;
- border: 1px solid #ccc;
- background: #61c0f3;
+ border: 1px solid #ffffff;
+ background: white;
  margin: 0px 0px 5px 0px;
  padding: 10px;
- height: 530px;
- width: 725px;
+ height: 95%;
+ width: 95%;
  display: inline;
  position: relative;
 }
@@ -53,21 +42,21 @@ h1 {
 .table {
     width: 100%;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 20px;
 }
 
 .table th, .table td {
     text-align: center;
     padding: 8px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255);
 }
 .tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.5); /* 짝수 행의 배경색을 투명하게 설정 */
+    background-color: rgba(255, 255, 255, 0); /* 짝수 행의 배경색을 투명하게 설정 */
 }
 
 .tr:nth-child(odd) {
-    background-color: rgba(255, 255, 255, 0.5); /* 홀수 행의 배경색을 투명하게 설정 */
+    background-color: rgba(255, 255, 255, 0); /* 홀수 행의 배경색을 투명하게 설정 */
 }
 
 .btn {
