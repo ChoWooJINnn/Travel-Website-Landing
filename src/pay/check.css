@@ -1,0 +1,85 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 16px;
+    color : blue
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.product-info, .payment-summary, .agreement {
+    background-color: #f9f9f9;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+}
+
+.product-info p {
+    margin: 4px 0;
+}
+
+.payment-summary h2 {
+    margin-top: 0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.summary-row.total {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.agreement p {
+    margin: 8px 0;
+    font-size: 12px;
+}
+
+.agreement a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.pay-button {
+    width: 100%;
+    padding: 16px;
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pay-button:hover {
+    background-color: #1C86EE;
+}

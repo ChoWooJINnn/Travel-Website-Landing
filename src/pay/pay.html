@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+    <div class="container">
+        <h1>결제 확인창</h1>
+        <form>
+            <label for="amount">수량</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="payment-method">결제 방법</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="paypal">TossPay</option>
+                <option value="bank-transfer">계좌 이체</option>
+            </select>
+
+            <label for="payment-time">결제 시간</label>
+            <input type="text" id="payment-time" name="payment-time" value="2024-08-05 19:17:16" readonly>
+
+            <label for="payment-status">결제 상태</label>
+            <input type="text" id="payment-status" name="payment-status" value="진행중" readonly>
+
+            <div class="buttons">
+                <button type="submit">마이페이지로 이동</button>
+                <button2 type="button" onclick="cancelPayment()">결제 취소</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function cancelPayment() {
+            document.getElementById("amount").value = "";
+            document.getElementById("payment-method").value = "credit-card";
+            document.getElementById("payment-status").value = "Cancelled";
+        }
+    </script>
+</body>
+</html>
